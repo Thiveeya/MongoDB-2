@@ -1,1 +1,918 @@
+// Answers for ZENCLASS
 
+db.createCollection("zenclass")
+
+db.zenclass.insertMany([
+    {
+        "user" : "Thiveeya",
+        "codekata" : 278,
+        "attendance" : "Present",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-10>"),
+        "tasks" : "movie_app",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Karthik",
+        "codekata" : 200,
+        "attendance" : "Present",
+        "topics" : "MongoDB",
+        "topic_date" : new Date("<2020-10-15>"),
+        "task_date" : new Date("<2020-10-16>"),
+        "tasks" : "mongo_commands",
+        "company_drives" : "TCS",
+        "company_drives_date" : new Date("<2020-10-25>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Eswar",
+        "codekata" : 175,
+        "attendance" : "Present",
+        "topics" : "Node_js",
+        "topic_date" : new Date("<2020-10-20>"),
+        "task_date" : new Date("<2020-10-21>"),
+        "tasks" : "create_api",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Chandrasekar",
+        "codekata" : 150,
+        "attendance" : "Present",
+        "topics" : "HTML",
+        "topic_date" : new Date("<2020-10-07>"),
+        "task_date" : new Date("<2020-10-09>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "WIPRO",
+        "company_drives_date" : new Date("<2020-10-22>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    },    
+    {
+        "user" : "Baskar",
+        "codekata" : 250,
+        "attendance" : "Present",
+        "topics" : "CSS",
+        "topic_date" : new Date("<2020-10-12>"),
+        "task_date" : new Date("<2020-10-14>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    }, 
+    {
+        "user" : "Anbu",
+        "codekata" : 93,
+        "attendance" : "Absent",
+        "topics" : "JavaScript",
+        "topic_date" : new Date("<2020-10-19>"),
+        "task_date" : new Date("<2020-10-23>"),
+        "tasks" : "functions",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Not_appeared",
+        "mentors" : "Rupan"
+    },    
+    {
+        "user" : "Sangeetha",
+        "codekata" : 180,
+        "attendance" : "Present",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-16>"),
+        "tasks" : "movie_app",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Malathy",
+        "codekata" : 125,
+        "attendance" : "Present",
+        "topics" : "CSS",
+        "topic_date" : new Date("<2020-10-12>"),
+        "task_date" : new Date("<2020-10-20>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "TCS",
+        "company_drives_date" : new Date("<2020-10-25>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    },    
+    {
+        "user" : "Suresh",
+        "codekata" : 155,
+        "attendance" : "Present",
+        "topics" : "Node_js",
+        "topic_date" : new Date("<2020-10-20>"),
+        "task_date" : new Date("<2020-10-21>"),
+        "tasks" : "create_api",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Sundar",
+        "codekata" : 55,
+        "attendance" : "Present",
+        "topics" : "MongoDB",
+        "topic_date" : new Date("<2020-10-15>"),
+        "task_date" : new Date("<2020-10-19>"),
+        "tasks" : "mongo_commands",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Priya",
+        "codekata" : 68,
+        "attendance" : "Present",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-16>"),
+        "tasks" : "movie_app",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Not_appeared",
+        "mentors" : "Sathish"
+    }, 
+    {
+        "user" : "Sarika",
+        "codekata" : 250,
+        "attendance" : "Absent",
+        "topics" : "JavaScript",
+        "topic_date" : new Date("<2020-10-19>"),
+        "task_date" : new Date("<2020-10-23>"),
+        "tasks" : "functions",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Appeared",
+        "mentors" : "Rupan"
+    },   
+     {
+        "user" : "Lasika",
+        "codekata" : 95,
+        "attendance" : "Present",
+        "topics" : "HTML",
+        "topic_date" : new Date("<2020-10-07>"),
+        "task_date" : new Date("<2020-10-09>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Not_appeared",
+        "mentors" : "Magesh"
+    },
+    {
+        "user" : "Brinda",
+        "codekata" : 200,
+        "attendance" : "Present",
+        "topics" : "Node_js",
+        "topic_date" : new Date("<2020-10-20>"),
+        "task_date" : new Date("<2020-10-25>"),
+        "tasks" : "create_api",
+        "company_drives" : "WIPRO",
+        "company_drives_date" : new Date("<2020-10-22>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Suriya",
+        "codekata" : 175,
+        "attendance" : "Present",
+        "topics" : "MongoDB",
+        "topic_date" : new Date("<2020-10-15>"),
+        "task_date" : new Date("<2020-10-20>"),
+        "tasks" : "mongo_commands",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Varsha",
+        "codekata" : 105,
+        "attendance" : "Absent",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-22>"),
+        "tasks" : "movie_app",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Aswin",
+        "codekata" : 265,
+        "attendance" : "Present",
+        "topics" : "HTML",
+        "topic_date" : new Date("<2020-10-07>"),
+        "task_date" : new Date("<2020-10-11>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "WIPRO",
+        "company_drives_date" : new Date("<2020-10-22>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    }, 
+    {
+        "user" : "Brijesh",
+        "codekata" : 300,
+        "attendance" : "Present",
+        "topics" : "JavaScript",
+        "topic_date" : new Date("<2020-10-19>"),
+        "task_date" : new Date("<2020-10-29>"),
+        "tasks" : "functions",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Appeared",
+        "mentors" : "Rupan"
+    },    {
+        "user" : "Dharshini",
+        "codekata" : 30,
+        "attendance" : "Absent",
+        "topics" : "CSS",
+        "topic_date" : new Date("<2020-10-12>"),
+        "task_date" : new Date("<2020-10-16>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "HCL",
+        "company_drives_date" : new Date("<2020-10-20>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    },
+    {
+        "user" : "Bhuvana",
+        "codekata" : 177,
+        "attendance" : "Present",
+        "topics" : "MongoDB",
+        "topic_date" : new Date("<2020-10-15>"),
+        "task_date" : new Date("<2020-10-17>"),
+        "tasks" : "mongo_commands",
+        "company_drives" : "TCS",
+        "company_drives_date" : new Date("<2020-10-25>"),
+        "placement": "Not_appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Sivaranjini",
+        "codekata" : 133,
+        "attendance" : "Present",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-11>"),
+        "tasks" : "movie_app",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Vatchala",
+        "codekata" : 222,
+        "attendance" : "Absent",
+        "topics" : "Node_js",
+        "topic_date" : new Date("<2020-10-20>"),
+        "task_date" : new Date("<2020-10-22>"),
+        "tasks" : "create_api",
+        "company_drives" : "WIPRO",
+        "company_drives_date" : new Date("<2020-10-22>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },    
+    {
+        "user" : "Anu",
+        "codekata" : 50,
+        "attendance" : "Absent",
+        "topics" : "HTML",
+        "topic_date" : new Date("<2020-10-07>"),
+        "task_date" : new Date("<2020-10-09>"),
+        "tasks" : "responsive_web_design",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Appeared",
+        "mentors" : "Magesh"
+    }, 
+    {
+        "user" : "Ishu",
+        "codekata" : 350,
+        "attendance" : "Present",
+        "topics" : "Node_js",
+        "topic_date" : new Date("<2020-10-20>"),
+        "task_date" : new Date("<2020-10-25>"),
+        "tasks" : "create_api",
+        "company_drives" : "ZOHO",
+        "company_drives_date" : new Date("<2020-10-28>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Aarthi",
+        "codekata" : 88,
+        "attendance" : "Present",
+        "topics" : "React",
+        "topic_date" : new Date("<2020-10-05>"),
+        "task_date" : new Date("<2020-10-15>"),
+        "tasks" : "movie_app",
+        "company_drives" : "WIPRO",
+        "company_drives_date" : new Date("<2020-10-22>"),
+        "placement": "Not_appeared",
+        "mentors" : "Sathish"
+    },
+    {
+        "user" : "Keerthana",
+        "codekata" : 189,
+        "attendance" : "Present",
+        "topics" : "JavaScript",
+        "topic_date" : new Date("<2020-10-19>"),
+        "task_date" : new Date("<2020-10-25>"),
+        "tasks" : "functions",
+        "company_drives" : "Cognizant",
+        "company_drives_date" : new Date("<2020-10-31>"),
+        "placement": "Appeared",
+        "mentors" : "Rupan"
+    },
+    {
+        "user" : "Vignesh",
+        "codekata" : 159,
+        "attendance" : "Absent",
+        "topics" : "MongoDB",
+        "topic_date" : new Date("<2020-10-15>"),
+        "task_date" : new Date("<2020-10-21>"),
+        "tasks" : "mongo_commands",
+        "company_drives" : "TCS",
+        "company_drives_date" : new Date("<2020-10-25>"),
+        "placement": "Appeared",
+        "mentors" : "Sathish"
+    },
+]);
+
+
+//Find all the topics and tasks which are thought in the month of October
+
+
+db.zenclass.find({$or: [{topic_date: {$gte : new Date("<2020-10-01>"), $lte: new Date("<2020-10-31>")}},{task_date: {$gte : new Date("<2020-10-01>"), $lte: new Date("<2020-10-31>")}}]},{topics: 1, tasks: 1}).toArray();
+
+[
+  {
+    _id: ObjectId("64b16e041db5a296a8455199"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519a"),
+    topics: 'MongoDB',
+    tasks: 'mongo_commands'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519b"),
+    topics: 'Node_js',
+    tasks: 'create_api'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519c"),
+    topics: 'HTML',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519d"),
+    topics: 'CSS',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519e"),
+    topics: 'JavaScript',
+    tasks: 'functions'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a845519f"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a0"),
+    topics: 'CSS',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a1"),
+    topics: 'Node_js',
+    tasks: 'create_api'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a2"),
+    topics: 'MongoDB',
+    tasks: 'mongo_commands'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a3"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a4"),
+    topics: 'JavaScript',
+    tasks: 'functions'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a5"),
+    topics: 'HTML',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a6"),
+    topics: 'Node_js',
+    tasks: 'create_api'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a7"),
+    topics: 'MongoDB',
+    tasks: 'mongo_commands'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a8"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a9"),
+    topics: 'HTML',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551aa"),
+    topics: 'JavaScript',
+    tasks: 'functions'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551ab"),
+    topics: 'CSS',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551ac"),
+    topics: 'MongoDB',
+    tasks: 'mongo_commands'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551ad"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551ae"),
+    topics: 'Node_js',
+    tasks: 'create_api'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551af"),
+    topics: 'HTML',
+    tasks: 'responsive_web_design'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b0"),
+    topics: 'Node_js',
+    tasks: 'create_api'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b1"),
+    topics: 'React',
+    tasks: 'movie_app'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b2"),
+    topics: 'JavaScript',
+    tasks: 'functions'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b3"),
+    topics: 'MongoDB',
+    tasks: 'mongo_commands'
+  }
+]
+
+// Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
+db.zenclass.find({company_drives_date: {$gte : new Date("<2020-10-15>"), $lte: new Date("<2020-10-31>")}},{company_drives: 1}).toArray();
+
+
+[
+  { _id: ObjectId("64b16e041db5a296a8455199"), company_drives: 'HCL' },
+  { _id: ObjectId("64b16e041db5a296a845519a"), company_drives: 'TCS' },
+  { _id: ObjectId("64b16e041db5a296a845519b"), company_drives: 'ZOHO' },
+  {
+    _id: ObjectId("64b16e041db5a296a845519c"),
+    company_drives: 'WIPRO'
+  },
+  { _id: ObjectId("64b16e041db5a296a845519d"), company_drives: 'ZOHO' },
+  {
+    _id: ObjectId("64b16e041db5a296a845519e"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a845519f"), company_drives: 'HCL' },
+  { _id: ObjectId("64b16e041db5a296a84551a0"), company_drives: 'TCS' },
+  { _id: ObjectId("64b16e041db5a296a84551a1"), company_drives: 'ZOHO' },
+  { _id: ObjectId("64b16e041db5a296a84551a2"), company_drives: 'HCL' },
+  { _id: ObjectId("64b16e041db5a296a84551a3"), company_drives: 'ZOHO' },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a4"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a84551a5"), company_drives: 'HCL' },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a6"),
+    company_drives: 'WIPRO'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a7"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a84551a8"), company_drives: 'HCL' },
+  {
+    _id: ObjectId("64b16e041db5a296a84551a9"),
+    company_drives: 'WIPRO'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551aa"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a84551ab"), company_drives: 'HCL' },
+  { _id: ObjectId("64b16e041db5a296a84551ac"), company_drives: 'TCS' },
+  { _id: ObjectId("64b16e041db5a296a84551ad"), company_drives: 'ZOHO' },
+  {
+    _id: ObjectId("64b16e041db5a296a84551ae"),
+    company_drives: 'WIPRO'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551af"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a84551b0"), company_drives: 'ZOHO' },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b1"),
+    company_drives: 'WIPRO'
+  },
+  {
+    _id: ObjectId("64b16e041db5a296a84551b2"),
+    company_drives: 'Cognizant'
+  },
+  { _id: ObjectId("64b16e041db5a296a84551b3"), company_drives: 'TCS' }
+]
+
+
+// Find all the company drives and students who are appeared for the placement.
+db.zenclass.find({placement: "Appeared"},{ _id: 0,user: 1, company_drives: 1}).toArray();
+
+
+[
+
+   { user: 'Thiveeya', company_drives: 'HCL' },
+  { user: 'Karthik', company_drives: 'TCS' },
+  { user: 'Eswar', company_drives: 'ZOHO' },
+  { user: 'Chandrasekar', company_drives: 'WIPRO' },
+  { user: 'Baskar', company_drives: 'ZOHO' },
+  { user: 'Sangeetha', company_drives: 'HCL' },
+  { user: 'Malathy', company_drives: 'TCS' },
+  { user: 'Suresh', company_drives: 'ZOHO' },
+  { user: 'Sundar', company_drives: 'HCL' },
+  { user: 'Sarika', company_drives: 'Cognizant' },
+  { user: 'Brinda', company_drives: 'WIPRO' },
+  { user: 'Suriya', company_drives: 'Cognizant' },
+  { user: 'Varsha', company_drives: 'HCL' },
+  { user: 'Aswin', company_drives: 'WIPRO' },
+  { user: 'Brijesh', company_drives: 'Cognizant' },
+  { user: 'Dharshini', company_drives: 'HCL' },
+  { user: 'Sivaranjini', company_drives: 'ZOHO' },
+  { user: 'Vatchala', company_drives: 'WIPRO' },
+  { user: 'Anu', company_drives: 'Cognizant' },
+  { user: 'Ishu', company_drives: 'ZOHO' },
+  { user: 'Keerthana', company_drives: 'Cognizant' },
+  { user: 'Vignesh', company_drives: 'TCS' }
+]
+
+
+
+// Find the number of problems solved by the user in codekata
+db.zenclass.find({},{_id: 0,user: 1, codekata: 1}).toArray();
+
+
+[
+  { user: 'Thiveeya', codekata: 278 },
+  { user: 'Karthik', codekata: 200 },
+  { user: 'Eswar', codekata: 175 },
+  { user: 'Chandrasekar', codekata: 150 },
+  { user: 'Baskar', codekata: 250 },
+  { user: 'Anbu', codekata: 93 },
+  { user: 'Sangeetha', codekata: 180 },
+  { user: 'Malathy', codekata: 125 },
+  { user: 'Suresh', codekata: 155 },
+  { user: 'Sundar', codekata: 55 },
+  { user: 'Priya', codekata: 68 },
+  { user: 'Sarika', codekata: 250 },
+  { user: 'Lasika', codekata: 95 },
+  { user: 'Brinda', codekata: 200 },
+  { user: 'Suriya', codekata: 175 },
+  { user: 'Varsha', codekata: 105 },
+  { user: 'Aswin', codekata: 265 },
+  { user: 'Brijesh', codekata: 300 },
+  { user: 'Dharshini', codekata: 30 },
+  { user: 'Bhuvana', codekata: 177 },
+  { user: 'Sivaranjini', codekata: 133 },
+  { user: 'Vatchala', codekata: 222 },
+  { user: 'Anu', codekata: 50 },
+  { user: 'Ishu', codekata: 350 },
+  { user: 'Aarthi', codekata: 88 },
+  { user: 'Keerthana', codekata: 189 },
+  { user: 'Vignesh', codekata: 159 }
+]
+
+
+// Find all the mentors with who has the mentee's count more than 15
+db.zenclass.aggregate([
+    {$group: {_id: "$mentors", count: {$sum: 1}}},
+    {$match: {_id: {$ne: null}, count: {$gt: 15}}}
+]);
+
+{
+  _id: 'Sathish',
+  count: 16
+}
+
+
+db.zenclass.find({mentors: "Sathish"},{user: 1, mentors: 1});
+
+{
+  _id: ObjectId("64b16e041db5a296a8455199"),
+  user: 'Thiveeya',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519a"),
+  user: 'Karthik',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519b"),
+  user: 'Eswar',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519f"),
+  user: 'Sangeetha',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a1"),
+  user: 'Suresh',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a2"),
+  user: 'Sundar',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a3"),
+  user: 'Priya',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a6"),
+  user: 'Brinda',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a7"),
+  user: 'Suriya',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a8"),
+  user: 'Varsha',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ac"),
+  user: 'Bhuvana',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ad"),
+  user: 'Sivaranjini',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ae"),
+  user: 'Vatchala',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551b0"),
+  user: 'Ishu',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551b1"),
+  user: 'Aarthi',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551b3"),
+  user: 'Vignesh',
+  mentors: 'Sathish'
+}
+
+
+// Find the number of users who are absent and task is not submitted  between 15 oct-2020 and 31-oct-2020
+
+db.zenclass.find({$or: [{attendance: "Absent"}, {task_date: {$not: {$gte: new Date("<2020-10-15>"), $lte: new Date("<2020-10-31>")}}}]});
+
+{
+  _id: ObjectId("64b16e041db5a296a8455199"),
+  user: 'Thiveeya',
+  codekata: 278,
+  attendance: 'Present',
+  topics: 'React',
+  topic_date: 2020-10-04T18:30:00.000Z,
+  task_date: 2020-10-09T18:30:00.000Z,
+  tasks: 'movie_app',
+  company_drives: 'HCL',
+  company_drives_date: 2020-10-19T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519c"),
+  user: 'Chandrasekar',
+  codekata: 150,
+  attendance: 'Present',
+  topics: 'HTML',
+  topic_date: 2020-10-06T18:30:00.000Z,
+  task_date: 2020-10-08T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'WIPRO',
+  company_drives_date: 2020-10-21T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519d"),
+  user: 'Baskar',
+  codekata: 250,
+  attendance: 'Present',
+  topics: 'CSS',
+  topic_date: 2020-10-11T18:30:00.000Z,
+  task_date: 2020-10-13T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'ZOHO',
+  company_drives_date: 2020-10-27T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a845519e"),
+  user: 'Anbu',
+  codekata: 93,
+  attendance: 'Absent',
+  topics: 'JavaScript',
+  topic_date: 2020-10-18T18:30:00.000Z,
+  task_date: 2020-10-22T18:30:00.000Z,
+  tasks: 'functions',
+  company_drives: 'Cognizant',
+  company_drives_date: 2020-10-30T18:30:00.000Z,
+  placement: 'Not_appeared',
+  mentors: 'Rupan'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a4"),
+  user: 'Sarika',
+  codekata: 250,
+  attendance: 'Absent',
+  topics: 'JavaScript',
+  topic_date: 2020-10-18T18:30:00.000Z,
+  task_date: 2020-10-22T18:30:00.000Z,
+  tasks: 'functions',
+  company_drives: 'Cognizant',
+  company_drives_date: 2020-10-30T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Rupan'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a5"),
+  user: 'Lasika',
+  codekata: 95,
+  attendance: 'Present',
+  topics: 'HTML',
+  topic_date: 2020-10-06T18:30:00.000Z,
+  task_date: 2020-10-08T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'HCL',
+  company_drives_date: 2020-10-19T18:30:00.000Z,
+  placement: 'Not_appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a8"),
+  user: 'Varsha',
+  codekata: 105,
+  attendance: 'Absent',
+  topics: 'React',
+  topic_date: 2020-10-04T18:30:00.000Z,
+  task_date: 2020-10-21T18:30:00.000Z,
+  tasks: 'movie_app',
+  company_drives: 'HCL',
+  company_drives_date: 2020-10-19T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551a9"),
+  user: 'Aswin',
+  codekata: 265,
+  attendance: 'Present',
+  topics: 'HTML',
+  topic_date: 2020-10-06T18:30:00.000Z,
+  task_date: 2020-10-10T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'WIPRO',
+  company_drives_date: 2020-10-21T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ab"),
+  user: 'Dharshini',
+  codekata: 30,
+  attendance: 'Absent',
+  topics: 'CSS',
+  topic_date: 2020-10-11T18:30:00.000Z,
+  task_date: 2020-10-15T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'HCL',
+  company_drives_date: 2020-10-19T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ad"),
+  user: 'Sivaranjini',
+  codekata: 133,
+  attendance: 'Present',
+  topics: 'React',
+  topic_date: 2020-10-04T18:30:00.000Z,
+  task_date: 2020-10-10T18:30:00.000Z,
+  tasks: 'movie_app',
+  company_drives: 'ZOHO',
+  company_drives_date: 2020-10-27T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551ae"),
+  user: 'Vatchala',
+  codekata: 222,
+  attendance: 'Absent',
+  topics: 'Node_js',
+  topic_date: 2020-10-19T18:30:00.000Z,
+  task_date: 2020-10-21T18:30:00.000Z,
+  tasks: 'create_api',
+  company_drives: 'WIPRO',
+  company_drives_date: 2020-10-21T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Sathish'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551af"),
+  user: 'Anu',
+  codekata: 50,
+  attendance: 'Absent',
+  topics: 'HTML',
+  topic_date: 2020-10-06T18:30:00.000Z,
+  task_date: 2020-10-08T18:30:00.000Z,
+  tasks: 'responsive_web_design',
+  company_drives: 'Cognizant',
+  company_drives_date: 2020-10-30T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Magesh'
+}
+{
+  _id: ObjectId("64b16e041db5a296a84551b3"),
+  user: 'Vignesh',
+  codekata: 159,
+  attendance: 'Absent',
+  topics: 'MongoDB',
+  topic_date: 2020-10-14T18:30:00.000Z,
+  task_date: 2020-10-20T18:30:00.000Z,
+  tasks: 'mongo_commands',
+  company_drives: 'TCS',
+  company_drives_date: 2020-10-24T18:30:00.000Z,
+  placement: 'Appeared',
+  mentors: 'Sathish'
+}
